@@ -5,7 +5,6 @@ import IconButton from '../template/IconButton'
 const TodoList = props => {
     const renderRows = () => {
         const list = props.list || []
-        console.log(state)
         return list.map(todo =>(
             <tr key={todo._id}>
                 <td className={todo.done ? 'markedAsDone' : 'rapadura'}>{todo.description}</td>
